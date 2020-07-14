@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsUpgrade assignment day 2</title>
+        <h2>question 3</h2>
+        <script>
+            function get_date()
+               {
+                   today= new Date();
+                   var dd=today.getDate();
+                   var mm=today.getMonth()+1;
+                   var yyyy=today.getFullYear();
+                   if(dd<10) dd='0'+dd;
+                   if(mm<10) mm='0'+mm;
+                   document.write(dd + " - " + mm +" - " + yyyy+ ",");
+                   document.write("<br/>")
+                   document.write(dd + " / " + mm +" / "+ yyyy);
+               }
+        </script>
+    </head>
+    <body>
+    <p id="sample"></p>
+    <script>
+        document.getElementById("sample").innerHTML=get_date();
+    </script>
+        
+    </body>
+</html>

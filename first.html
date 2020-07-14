@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Assignment day 2 First question</title>
+</head>
+<body>
+<script type="text/javascript"> 
+var today=new Date();
+var day=today.getDay();
+var daylist=["sunday","monday","tuesday","Wednesday","Thursday","Friday","Saturday"];
+console.log("today is: "+daylist[day] +".")
+document.write("today is : "+ daylist[day]+".");
+var hour=today.getHours();
+var minute=today.getMinutes();
+var second=today.getSeconds();
+var prepand=(hour>=12)?"PM":"AM";
+hour=(hour>=12)? hour-12:hour;
+console.log("current time is: " + hour + prepand +" : " + minute + " : "+ second );
+document.write ("<br />");
+document.write("current time is : "+ hour + prepand + " : "+ minute +" : " + second );
+</script>
+</body></html>
